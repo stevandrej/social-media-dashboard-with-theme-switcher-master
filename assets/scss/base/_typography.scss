@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+}
+
+.title{
+	font-weight: 700;
+	font-size: 3.1rem;
+	line-height: 1.6em;
+	color: var(--text-primary);
+
+	@include for-mobile{
+		font-size: 2.4rem;
+	}
+}
+
+.subtitle{
+	color: var(--text-secondary);
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.section-title{
+	color: var(--text-secondary);
+	font-weight: 700;
+	font-size: 2.4rem;
+
+	@include for-mobile{
+		font-size: 2.2rem;
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"facebook": {
+		"user": "@nathanf",
+		"followers": 1987,
+		"new_followers": 12,
+		"followers_type": "followers",
+		"daily_report": [
+			{
+				"data_info": "Page views",
+				"data_result": 87,
+				"percentage": 3
+			},
+			{
+				"data_info": "Likes",
+				"result": 52,
+				"percentage": -2
+			}
+		]
+	},
+	"twitter": {
+		"user": "@nathanf",
+		"followers": 10444,
+		"new_followers": 99,
+		"followers_type": "followers",
+		"daily_report": [
+			{
+				"data_info": "Retweets",
+				"data_result": 117,
+				"percentage": 303
+			},
+			{
+				"data_info": "Likes",
+				"data_result": 507,
+				"percentage": 553
+			}
+		]
+	},
+	"instagram": {
+		"user": "@realnathanf",
+		"followers": 11000,
+		"new_followers": 1099,
+		"followers_type": "followers",
+		"daily_report": [
+			{
+				"data_info": "likes",
+				"data_result": 5462,
+				"percentage": 2257
+			},
+			{
+				"data_info": "Profile views",
+				"data_result": 52000,
+				"percentage": 1375
+			}
+		]
+	},
+	"youtube": {
+		"user": "Nathan F.",
+		"followers": 8239,
+		"new_followers": -144,
+		"followers_type": "subscribers",
+		"daily_report": [
+			{
+				"data_info": "Likes",
+				"data_result": 107,
+				"percentage": -19
+			},
+			{
+				"data_info": "Total views",
+				"data_result": 1407,
+				"percentage": -12
+			}
+		]
+	}
+}

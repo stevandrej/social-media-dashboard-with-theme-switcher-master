@@ -1,0 +1,12 @@
+.dark{
+	--primary: hsl(230, 17%, 14%);
+	--secondary: hsl(232, 19%, 15%);
+	--tertiary: hsl(228, 28%, 20%);
+	--tertiary-hover: hsl(228, 28%, 28%);
+
+	--text-primary: hsl(0, 0%, 100%);
+	--text-secondary: hsl(228, 34%, 66%);
+
+	--toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	--toggle-active: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}

@@ -1,0 +1,114 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--tertiary);
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+
+	&:hover,
+	&:focus{
+		cursor: pointer;
+		background-color: var(--tertiary-hover);
+	}
+	
+	&__user{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		font-weight: 700;
+		color: var(--text-secondary);
+
+		img{
+			margin-right: 10px;
+		}
+	}
+
+	&__content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+
+		&__result{
+			font-size: 6rem;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: var(--text-primary);
+		}
+
+		&__followers{
+			letter-spacing: .3em;
+			text-transform: uppercase;
+			color: var(--text-secondary);
+		}
+	}
+
+	&__progress{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 1.6rem;
+
+		&--green{
+			color: $lime-green;
+		}
+
+		&--red{
+			color: $bright-red;
+		}
+
+		&__icon{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+			margin-right: 5px;
+		}
+	}
+
+	&--facebook::after{
+		content: '';
+		background-color: $facebook-color;
+		height: 5px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	&--twitter::after{
+		content: '';
+		background-color: $twitter-color;
+		height: 5px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	&--instagram::after{
+		content: '';
+		background: $instagram-color;
+		height: 5px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	&--youtube::after{
+		content: '';
+		background-color: $youtube-color;
+		height: 5px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+}

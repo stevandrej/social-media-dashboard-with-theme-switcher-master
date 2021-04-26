@@ -1,0 +1,11 @@
+@mixin for-desktop {
+	@media (max-width: #{$desktop-size}) {
+		@content;
+	}
+}
+
+@mixin for-mobile {
+	@media (max-width: #{$mobile-size}) {
+		@content;
+	}
+}

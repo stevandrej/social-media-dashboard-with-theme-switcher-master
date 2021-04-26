@@ -1,0 +1,15 @@
+.container{	
+	max-width: $desktop-size;
+	min-width: $mobile-size;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: auto;
+	position: relative;
+	min-height: 100vh;
+	padding: 30px;
+
+	@include for-mobile{
+		max-width: $mobile-size;
+	}
+}

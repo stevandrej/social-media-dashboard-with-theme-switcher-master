@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<title>Frontend Mentor | [Social Media Dashboard]</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+</head>
+
+<body class="light">
+
+	<div class="top-bg"></div>
+
+	<div class="container">
+		<header>
+			<div class="header-title">
+				<h1 class="title">Social Media Dashboard</h1>
+				<h3 class="subtitle">Total Followers: 23,004</h3>
+			</div>
+			<hr class="header-separator"/>
+			<div class="theme-switch">
+				Dark Mode
+				<label class="switch" for="theme-toggle">
+					<input id="theme-toggle" name="theme-toggle" type="checkbox">
+					<span class="switch__slider"></span>
+				</label>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero grid" id="hero-cards">
+				<div class="card card--facebook">
+					<div class="card__user"><img src="assets/img/icon-facebook.svg" alt="social media icon" /> @nathanf</div>
+					<div class="card__content">
+						<span class="card__content__result">1987</span>
+						<span class="card__content__followers">Followers</span>
+					</div>
+					<div class="card__progress card__progress--green">
+						<img class="card__progress__icon" src="assets/img/icon-up.svg" alt="progress icon" />
+						<span class="card__progress__today">12 Today</span>
+					</div>
+				</div>
+
+				<div class="card card--twitter">
+					<div class="card__user"><img src="assets/img/icon-twitter.svg" alt="social media icon" /> @nathanf</div>
+					<div class="card__content">
+						<span class="card__content__result">1044</span>
+						<span class="card__content__followers">Followers</span>
+					</div>
+					<div class="card__progress card__progress--green">
+						<img class="card__progress__icon" src="assets/img/icon-up.svg" alt="progress icon" />
+						<span class="card__progress__today">99 Today</span>
+					</div>
+				</div>
+
+				<div class="card card--instagram">
+					<div class="card__user"><img src="assets/img/icon-instagram.svg" alt="social media icon"/> @realnathanf</div>
+					<div class="card__content">
+						<span class="card__content__result">11k</span>
+						<span class="card__content__followers">Followers</span>
+					</div>
+					<div class="card__progress card__progress--green">
+						<img class="card__progress__icon" src="assets/img/icon-up.svg" alt="progress icon" />
+						<span class="card__progress__today">1099 Today</span>
+					</div>
+				</div>
+
+				<div class="card card--youtube">
+					<div class="card__user"><img src="assets/img/icon-youtube.svg" alt="social media icon" /> Nathan F.</div>
+					<div class="card__content">
+						<span class="card__content__result">8239</span>
+						<span class="card__content__followers">Subscribers</span>
+					</div>
+					<div class="card__progress card__progress--red">
+						<img class="card__progress__icon" src="assets/img/icon-down.svg" alt="progress icon" />
+						<span class="card__progress__today">144 Today</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="overview">
+				<h2 class="section-title">Overview - Today</h2>
+
+				<div class="grid" id="overview-cards">
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Page Views</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-facebook.svg" alt="social media icon"/></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">87</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-up.svg" alt="progress icon"> <span class="card-small--green">3%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Likes</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-facebook.svg" alt="social media icon"/></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">52</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-down.svg" alt="progress icon"/> <span class="card-small--red">2%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Likes</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-instagram.svg" alt="social media icon"/></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">5462</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-up.svg" alt="progress icon" /> <span class="card-small--green">2257%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Profile Views</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-instagram.svg" alt="social media icon"/></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">52k</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-up.svg" alt="progress icon"> <span class="card-small--green">1375%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Retweets</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-twitter.svg" alt="social media icon" /></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">117</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-up.svg" alt="progress icon"> <span class="card-small--green">303%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Likes</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-twitter.svg" alt="social media icon" /></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">507</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-up.svg" alt="progress icon"> <span class="card-small--green">553%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Likes</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-youtube.svg" alt="social media icon" /></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">107</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-down.svg" alt="progress icon"> <span class="card-small--red">19%</span></div>
+						</div>
+					</div>
+
+					<div class="card-small">
+						<div class="card-small__top">
+							<div class="card-small__top__activity">Total Views</div>
+							<div class="card-small__top__social-logo"><img src="assets/img/icon-youtube.svg" alt="social media icon" /></div>
+						</div>
+						<div class="card-small__bottom">
+							<div class="card-small__bottom__result">1407</div>
+							<div class="card-small__bottom__progress"><img class="card-small__bottom__progress__icon"
+									src="/assets/img/icon-down.svg" alt="progress icon"> <span class="card-small--red">12%</span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+				Coded by <a href="#">Your Name Here</a>.
+			</div>
+		</footer>
+	</div>
+
+
+	<script src="/assets/js/controller.js" type="module"></script>
+</body>
+
+</html>
