@@ -11,6 +11,10 @@ body{
 	line-height: 1.6em;
 	color: var(--text-primary);
 
+	@include for-tablet{
+		font-size: 2.6rem;
+	}
+
 	@include for-mobile{
 		font-size: 2.4rem;
 	}

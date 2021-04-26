@@ -4,7 +4,7 @@ header{
 	align-items: center;
 	padding: 30px 0 50px 0;
 
-	@include for-mobile{
+	@include for-tablet{
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -12,7 +12,7 @@ header{
 
 .theme-switch{
 
-	@include for-mobile{
+	@include for-tablet{
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
@@ -27,7 +27,7 @@ header{
 	background-color: var(--text-secondary);
 	margin: 30px auto;
 
-	@include for-mobile{
+	@include for-tablet{
 		display: block;
 	}
 }

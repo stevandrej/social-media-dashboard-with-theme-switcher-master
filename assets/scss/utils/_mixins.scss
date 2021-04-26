@@ -4,6 +4,12 @@
 	}
 }
 
+@mixin for-tablet {
+	@media (max-width: #{$tablet-size}) {
+		@content;
+	}
+}
+
 @mixin for-mobile {
 	@media (max-width: #{$mobile-size}) {
 		@content;
