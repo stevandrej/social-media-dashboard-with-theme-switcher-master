@@ -178,6 +178,18 @@ body {
 				--toggle-active: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
+@media (prefers-color-scheme: light) {
+				.light {
+								--primary: hsl(0, 0%, 100%);
+								--secondary: hsl(225, 100%, 98%);
+								--tertiary: hsl(227, 47%, 96%);
+								--tertiary-hover: hsl(227, 47%, 92%);
+								--text-primary: hsl(230, 17%, 14%);
+								--text-secondary: hsl(228, 12%, 44%);
+								--toggle: hsl(230, 22%, 74%);
+								--toggle-active: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+				}
+}
 .dark {
 				--primary: hsl(230, 17%, 14%);
 				--secondary: hsl(232, 19%, 15%);
@@ -189,6 +201,18 @@ body {
 				--toggle-active: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
+@media (prefers-color-scheme: dark) {
+				.dark {
+								--primary: hsl(230, 17%, 14%);
+								--secondary: hsl(232, 19%, 15%);
+								--tertiary: hsl(228, 28%, 20%);
+								--tertiary-hover: hsl(228, 28%, 28%);
+								--text-primary: hsl(0, 0%, 100%);
+								--text-secondary: hsl(228, 34%, 66%);
+								--toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+								--toggle-active: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+				}
+}
 header {
 				display: flex;
 				justify-content: space-between;
@@ -280,6 +304,7 @@ footer {
 
 body {
 				background-color: var(--primary);
+				transition: background-color 0.2s;
 }
 
 .top-bg {
@@ -304,6 +329,7 @@ body {
 				padding: 30px;
 				position: relative;
 				overflow: hidden;
+				transition: background-color 0.4s;
 }
 .card:hover, .card:focus {
 				cursor: pointer;
@@ -400,6 +426,7 @@ body {
 				padding: 30px;
 				border-radius: 6px;
 				background-color: var(--tertiary);
+				transition: background-color 0.4s;
 }
 .card-small:hover, .card-small:focus {
 				cursor: pointer;
