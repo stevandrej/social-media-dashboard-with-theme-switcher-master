@@ -4,6 +4,7 @@
 	padding: 30px;
 	border-radius: 6px;
 	background-color: var(--tertiary);
+	transition: background-color .4s;
 
 	&:hover,
 	&:focus{
