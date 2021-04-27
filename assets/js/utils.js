@@ -29,7 +29,7 @@ export const animateCounter = (el, numberFormater) => {
 		frame++;
 		const progress = easeOutQuad(frame / totalFrames);
 		const currentCount = Math.round(countTo * progress);
-		if (parseInt(el.innerHTML, 10) !== currentCount) {
+		if (countTo !== currentCount) {
 			if (numberFormater !== undefined) {
 				el.innerHTML = numberFormater(currentCount);
 			}
