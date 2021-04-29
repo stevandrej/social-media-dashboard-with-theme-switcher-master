@@ -1,6 +1,6 @@
 import { elements } from '../base.js';
 
-const cardView = ({socialMedia, user, followers, followers_type, new_followers} = data) => {
+const Card = (socialMedia, { user, followers, followers_type, new_followers } = data) => {
 	const markup =
 		`<div class="card card--${socialMedia}">
 			<div class="card__user"><img src="assets/img/icon-${socialMedia}.svg" alt="social media icon" /> ${user}</div>
@@ -19,4 +19,4 @@ const cardView = ({socialMedia, user, followers, followers_type, new_followers} 
 	elements.cardsContainer.insertAdjacentHTML('beforeend', markup);
 }
 
-export default cardView;
+export default Card;
